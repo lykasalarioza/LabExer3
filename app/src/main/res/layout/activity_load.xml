@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salarioza.labexer3.load">
+
+    <Button
+        android:id="@+id/Btn_shared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shared Preferences"
+        android:onClick="saveSharedPref"
+        android:layout_below="@+id/Btn_intCache"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/Btn_intStrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Storage"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/Btn_shared"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/Btn_intCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Cache"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/Btn_extCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Cache"
+        android:textColor="@color/colorPrimaryDark"
+        android:onClick="externalCache"
+        android:layout_below="@+id/Btn_extStor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/Btn_extStor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Storage"
+        android:textColor="@color/colorPrimaryDark"
+        android:onClick="externalStorage"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/Btn_intStrg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/Btn_extPub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Public"
+        android:textColor="@color/colorPrimaryDark"
+        android:onClick="externalPublic"
+        android:layout_below="@+id/Btn_intStrg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Btn_extCache"
+        android:text="Text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
